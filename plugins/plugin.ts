@@ -1,5 +1,5 @@
 export default defineNuxtPlugin((nuxt) => {
-	let { data, refresh: refreshUser } = useFetch<{ data: string }>("/api/data");
+	const data = ref();
 
 	return {
 		provide: {

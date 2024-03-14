@@ -8,7 +8,7 @@ This bug appears in both dev and node-server builds
  - ```npm install && npm run dev ```
  - Verify the correct case
    - In a browser go to [http://localhost:3000/correct](http://localhost:3000/correct)
-   - See that it displays `False` meaning that $data is correctly null
+   - See that it displays `False` meaning that $data is correctly undefined
  - Verify the bugged case
    - In a browser go to [http://localhost:3000/bugged](http://localhost:3000/bugged)
-   - See that it displays `True` meaning that $data is incorrectly `{}` despite the api endpoint returning nothing
+   - See that it displays `True` meaning that $data is incorrectly `{}` despite the provided ref clearly being undefined
